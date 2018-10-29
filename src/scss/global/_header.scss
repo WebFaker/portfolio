@@ -1,10 +1,11 @@
 :root {
+    transition: all 0.5s;
     background: var(--box-color);
     color: var(--body-color);
     --main-color: #ffd500;
     --hover-color: #ffa400;
     --body-color: #fff;
-    --box-color: #101010;
+    --box-color: #000;
 }
 
 .header {
@@ -24,9 +25,9 @@
         }
     }
     &_title {
+        transition: 0.5s all;
         font-family: "Playfair Display", serif;
         line-height: 1.5;
-        transition: 0.5s all;
         font-size: 36px;
     }
     &_text {
@@ -34,7 +35,8 @@
         font-size: 16px;
         font-style: italic;
         &_container {
-            position: absolute;
+            color: white;
+            position: fixed;
             top: 5%;
             left: 5%;
         }
@@ -53,6 +55,7 @@
             text-orientation: upright;
         }
         &_container {
+            cursor: pointer;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -64,11 +67,17 @@
     }
     &_theme {
         &_button {
+            transition: 0.3s all;
+            cursor: pointer;
             font-family: "Playfair Display", serif;
-            position: absolute;
+            position: fixed;
             left: 5%;
             bottom: 5%;
             font-size: 16px;
+            &:hover {
+                background: var(--body-color);
+                color: var(--box-color);
+            }
         }
     }
 }
