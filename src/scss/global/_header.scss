@@ -1,0 +1,69 @@
+:root {
+    background: var(--box-color);
+    color: var(--body-color);
+    --main-color: #ffd500;
+    --hover-color: #EE0000;
+    --body-color: #fff;
+    --box-color: #101010;
+}
+
+.header {
+    transition: 0.5s all;
+    position: relative;
+    height: 100vh;
+    &_rose {
+        height: 100%;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        &_path {
+            transition: 0.5s all;
+            fill: var(--main-color);
+        }
+    }
+    &_title {
+        transition: 0.5s all;
+        font-size: 36px;
+    }
+    &_text {
+        transition: 0.5s all;
+        font-size: 20px;
+        font-style: italic;
+        &_container {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+        }
+    }
+    &_scrollbar {
+        transition: 0.5s all;
+        width: 1px;
+        height: 50px;
+        background: var(--body-color);
+        &_text {
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-align: center;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+        &_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 5%;
+            bottom: 5%;
+        }
+    }
+    &_theme {
+        &_button {
+            position: absolute;
+            left: 5%;
+            bottom: 5%;
+            font-size: 16px;
+        }
+    }
+}
