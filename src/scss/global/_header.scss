@@ -22,12 +22,14 @@
         }
     }
     &_title {
+        font-family: "Playfair Display", serif;
+        line-height: 1.5;
         transition: 0.5s all;
         font-size: 36px;
     }
     &_text {
         transition: 0.5s all;
-        font-size: 20px;
+        font-size: 16px;
         font-style: italic;
         &_container {
             position: absolute;
@@ -41,6 +43,7 @@
         height: 50px;
         background: var(--body-color);
         &_text {
+            font-family: "Playfair Display", serif;
             font-size: 16px;
             margin-bottom: 10px;
             text-align: center;
@@ -59,6 +62,7 @@
     }
     &_theme {
         &_button {
+            font-family: "Playfair Display", serif;
             position: absolute;
             left: 5%;
             bottom: 5%;
