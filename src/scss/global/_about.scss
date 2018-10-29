@@ -1,9 +1,10 @@
 .about {
     margin: 0 15%;
     @media (min-width: $bp-large) {
-        margin: 0 5%;
+        margin: 0 10%;
     }
     &_text {
+        line-height: 1.5;
         font-size: 24px;
         padding-top: 50px;
         font-size: 16px;
