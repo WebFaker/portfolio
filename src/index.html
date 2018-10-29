@@ -162,5 +162,22 @@
             document.getElementById('theme_button').innerHTML = 'light';
         });
     </script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script>
+    (function() {
+    $(function() {
+            var onResize = function() {
+            //var docHeight = window.innerHeight;
+            var docHeight = $(window).outerHeight();
+            $('.header').css({height: docHeight});
+            };
+            $(window).on('resize', onResize);
+            onResize();
+        });
+    }());
+</script>
 </body>
 </html>

@@ -2,18 +2,17 @@
     background: var(--box-color);
     color: var(--body-color);
     --main-color: #ffd500;
-    --hover-color: #EE0000;
+    --hover-color: #ffa400;
     --body-color: #fff;
     --box-color: #101010;
 }
 
 .header {
-    transition: 0.5s all;
     position: relative;
     height: 100vh;
     &_rose {
         height: 100%;
-        position: fixed;
+        position: absolute;
         right: 0;
         bottom: 0;
         top: 0;
