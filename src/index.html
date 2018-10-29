@@ -130,9 +130,13 @@
             <p class="header_scrollbar_text">scroll</p>
             <div class="header_scrollbar"></div>
         </div>
-        <p id="theme_button" class="header_theme_button" onclick="document.documentElement.style.setProperty('--main-color', '#FF0000');">dark</p>
+        <p id="theme_button" class="header_theme_button" onclick="document.documentElement.style.setProperty('--main-color', '#FF0000');">light</p>
     </header>
     <script src="js/app.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
     <!-- <script>
     function setTheme(theme) {
             if (theme == 'Dark') {
@@ -153,19 +157,31 @@
           }
     </script> -->
     <script>
-        var themeButton = document.getElementById("theme_button");
-        themeButton.addEventListener("click", function() {
+        // var themeButton = document.getElementById("theme_button");
+        // themeButton.addEventListener("click", function() {
+        //     document.documentElement.style.setProperty('--main-color', '#FF0000');
+        //     document.documentElement.style.setProperty('--body-color', '#000');
+        //     document.documentElement.style.setProperty('--hover-color', '#EE0000');
+        //     document.documentElement.style.setProperty('--box-color', '#FFF');
+        //     document.getElementById('theme_button').innerHTML = 'dark';
+        // });
+        $("#theme_button").click(function(){
+        if ($(this).text() == "light") {
             document.documentElement.style.setProperty('--main-color', '#FF0000');
             document.documentElement.style.setProperty('--body-color', '#000');
             document.documentElement.style.setProperty('--hover-color', '#EE0000');
             document.documentElement.style.setProperty('--box-color', '#FFF');
+            document.getElementById('theme_button').innerHTML = 'dark';
+            }
+        else {
+            document.documentElement.style.setProperty('--main-color', '#ffd500');
+            document.documentElement.style.setProperty('--body-color', '#fff');
+            document.documentElement.style.setProperty('--hover-color', '#ffa400');
+            document.documentElement.style.setProperty('--box-color', '#000');
             document.getElementById('theme_button').innerHTML = 'light';
+            }
         });
     </script>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
     <script>
     (function() {
     $(function() {
