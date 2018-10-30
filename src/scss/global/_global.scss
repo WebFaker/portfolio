@@ -20,6 +20,10 @@ body {
     font-weight: lighter;
 }
 
+.colored {
+    color: var(--main-color);
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
@@ -37,5 +41,36 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--main-color);; 
+    background: var(--main-color);
 }
+
+// Loader
+
+#overlay{
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background:rgba(0,0,0,1);
+    transition: all 1s;
+  }
+  #progress{
+    height: 1px;
+    background: var(--main-color);
+    position: absolute;
+    width: 0;
+    top: 50%;
+    transition: 0.5s;
+  }
+  #progstat{
+    font-size: 10px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    width: 100%;
+    text-align: center;
+    color:#fff;
+  }
