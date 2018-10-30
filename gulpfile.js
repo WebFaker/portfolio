@@ -17,6 +17,11 @@ gulp.task('html', () => {
 		.pipe(gulp.dest('public'))
 		.pipe(browserSync.stream());
 });
+gulp.task('php', () => {
+	return gulp.src('src/components/*.php')
+		.pipe(gulp.dest('public/components'))
+		.pipe(browserSync.stream());
+});
 
 gulp.task('scss', () => {
 	return gulp.src('src/scss/master.scss')
@@ -53,10 +58,11 @@ gulp.task('assets', () => {
 		.pipe(browserSync.stream());
 });
 
-gulp.task('build', ['html', 'scss', 'js', 'assets']);
+gulp.task('build', ['html', 'php', 'scss', 'js', 'assets']);
 
 gulp.task('watch', ['build'], () => {
 	gulp.watch('src/**/*.html', ['html']);
+	gulp.watch('src/**/*.php', ['php']);
 	gulp.watch('src/scss/**/*.scss', ['scss']);
 	gulp.watch('src/js/**/*.js', ['js']);
 	gulp.watch('src/assets', ['assets']);
