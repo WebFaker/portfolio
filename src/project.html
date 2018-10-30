@@ -168,6 +168,9 @@
     crossorigin="anonymous"></script>
     <script src="js/app.min.js"></script>
     <script>
+    $(window).on('beforeunload', function(){
+        $(window).scrollTop(0);
+    });
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       document.write('');
     } else {
@@ -177,7 +180,7 @@
     <script>
         AOS.init({
         once: true
-        })
+        });
     </script>
 </body>
 </html>

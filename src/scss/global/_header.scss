@@ -65,6 +65,7 @@
             text-orientation: upright;
         }
         &_container {
+            transition: 0.3s all;
             text-decoration: none;
             color: var(--body-color);
             cursor: pointer;
