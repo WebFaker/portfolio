@@ -33,6 +33,8 @@
     <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Style -->
     <link rel="stylesheet" href="css/master.min.css">
 </head>
@@ -145,17 +147,17 @@
     </header>
 
     <section id="portfolio" class="portfolio">
-            <a class="portfolio_tile" href="#">
+            <a data-aos="fade-up" class="portfolio_tile" href="#">
                 <img class="portfolio_tile_image" src="https://via.placeholder.com/500x500" alt="">
             </a>
-            <a class="portfolio_tile" href="#">
-                    <img class="portfolio_tile_image" src="https://via.placeholder.com/500x500" alt="">
+            <a data-aos="fade-up" class="portfolio_tile" href="#">
+                <img class="portfolio_tile_image" src="https://via.placeholder.com/500x500" alt="">
             </a>
-            <a class="portfolio_tile" href="#">
-                    <img class="portfolio_tile_image" src="https://via.placeholder.com/500x500" alt="">
+            <a data-aos="fade-up" class="portfolio_tile" href="#">
+                <img class="portfolio_tile_image" src="https://via.placeholder.com/500x500" alt="">
             </a>
-            <a class="portfolio_tile" href="#">
-                    <img class="portfolio_tile_image" src="https://via.placeholder.com/500x500" alt="">
+            <a data-aos="fade-up" class="portfolio_tile" href="#">
+                <img class="portfolio_tile_image" src="https://via.placeholder.com/500x500" alt="">
             </a>
     </section>
 
@@ -172,5 +174,10 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <script src="js/app.min.js"></script>
+    <script>
+        AOS.init({
+        once: true
+        })
+    </script>
 </body>
 </html>

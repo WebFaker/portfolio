@@ -33,6 +33,8 @@
     <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Style -->
     <link rel="stylesheet" href="css/master.min.css">
 </head>
@@ -131,7 +133,8 @@
             </h1>
             <p id="header_text" class="header_text">
                 Welcome to my portfolio.
-            </p>         
+            </p>
+            <div class="header_background"></div>
         </a>
         <div id="header_presentation" class="header_presentation">
             <img src="https://via.placeholder.com/500x500" alt="" class="header_presentation_img">
@@ -145,14 +148,17 @@
     </header>
 
     <section class="project">
-        <h2 class="project_title">
+        <h2 class="project_title" data-aos="fade-up">
             Project title, and project description.<span class="colored">-</span>
         </h2>
-        <p class="project_text">
+        <p class="project_text" data-aos="fade-right">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem maiores est nobis assumenda! Doloribus in quos dolor deleniti provident. Dolorem optio quae minima eligendi voluptas aperiam, enim dolorum totam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sequi, quasi obcaecati pariatur, minima nihil culpa natus qui hic sapiente, reiciendis alias ab temporibus! Optio nostrum veniam tempore laudantium iusto.
         </p>
         <div class="project_img_container">
-            <img class="project_img" src="https://via.placeholder.com/1920x1080" alt="">
+            <img class="project_img" data-aos="fade-up" src="https://via.placeholder.com/1920x1080" alt="">
+            <img class="project_img" data-aos="fade-up" src="https://via.placeholder.com/1920x1080" alt="">
+            <img class="project_img" data-aos="fade-up" src="https://via.placeholder.com/1920x1080" alt="">
+            <img class="project_img" data-aos="fade-up" src="https://via.placeholder.com/1920x1080" alt="">
         </div>
     </section>
 
@@ -167,6 +173,11 @@
     } else {
       document.write('<script src="js/projectAnimation.js"><\/script>');
     }
+    </script>
+    <script>
+        AOS.init({
+        once: true
+        })
     </script>
 </body>
 </html>
