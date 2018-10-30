@@ -19,3 +19,23 @@ body {
     font-family: 'Hind Guntur', sans-serif;
     font-weight: lighter;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+// /* Track */
+// ::-webkit-scrollbar-track {
+//     background: #f1f1f1; 
+// }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--body-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color);; 
+}
