@@ -1,7 +1,7 @@
 .portfolio {
-    margin: 0 15%;
+    padding: 120px 15% 0;
     @media (min-width: $bp-large) {
-        margin: 0 5%;
+        padding: 50px 5% 0;
     }
     display: flex;
     flex-wrap: wrap;
