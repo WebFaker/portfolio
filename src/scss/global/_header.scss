@@ -9,8 +9,11 @@
 }
 
 .header {
+    height: 640px;
     position: relative;
-    height: 100vh;
+    @media (min-width: $bp-medium) {
+        height: 100vh;
+    }
     &_rose {
         width: 100%;
         height: 100%;
